@@ -1,6 +1,6 @@
-# Performance - Escenario 01 - Gestión de pedidos en alta concurrencia
+# Performance - Escenario 01 - Tiempos de respuesta degradados en alta concurrencia
 
-Durante una campaña de marketing, el volumen de pedidos se incrementa considerablemente, por lo que el microservicio de pedidos debe poder escalar horizontalmente, manteniendo una latencia máxima de 5 segundos durante el pico de demanda. El tráfico debe balancearse para que, al superar el 75% de carga del clúster, el escalado horizontal ocurra en menos de 2 minutos. El sistema debe mantener una tasa de éxito superior al 95% y habilitar reintentos automáticos en caso de fallo.
+Durante una campaña de marketing, el volumen de pedidos se incrementa considerablemente, por lo que el microservicio de pedidos escalar horizontalmente, manteniendo una latencia máxima de 5 segundos durante el pico de demanda. El tráfico debe balancearse para lograr que el periodo de degradación del servicio sea menor de 2 minutos.
 
 **Fuente:** Usuarios del sistema.
 
@@ -8,15 +8,12 @@ Durante una campaña de marketing, el volumen de pedidos se incrementa considera
 
 **Artefacto:** Microservicio de Pedidos.
 
-**Ambiente:** Durante una campaña de marketing, sistema bajo mucha carga.
+**Ambiente:** Durante una campaña de marketing, tiempos de respuesta degradados.
 
 **Respuesta:**
 - Se produce un escalado horizontal del microservicio de pedidos.
-- El tráfico se balancea de manera que las instancias del microservicio no dejen de responder.
-- Si algún pedido no se pudo procesar correctamente, se habilita el reintento.
+- El balanceo de carga permite restablecer el modo de operación normal.
 
 **Medida de Respuesta:**
-- El escalado horizontal se realiza al llegar a un 75% de carga en el cluster.
-- La instancia nueva está lista para recibir solicitudes en menos de 2 minutos.
-- La tasa de pedidos procesados sin falla es mayor a un 95%.
 - La latencia en el pico de carga no debe superar los 5 segundos.
+- El periodo de degradación del servicio no debe superar los 2 minutos.
