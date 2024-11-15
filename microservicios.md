@@ -1,3 +1,4 @@
+```mermaid
 graph TD
     subgraph Cliente
         PC[Cliente PC]
@@ -40,3 +41,4 @@ graph TD
     %% Pasarela de pagos
     PagosSvc -->|API de MercadoPago| ML([Pasarela de pago MercadoPago])
     PedidosSvc --> PagosSvc
+```
