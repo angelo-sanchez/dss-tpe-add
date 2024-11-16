@@ -1,13 +1,5 @@
 ```mermaid
----
-config:
-  layout: elk
-  elk:
-    
-    nodePlacementStrategy: SIMPLE
----
-
-graph TD
+graph LR
     %% Contexto principal
     subgraph Dominio_Pedidos["Dominio del Microservicio de Pedidos"]
         Pedido[Pedido Aggregate]
