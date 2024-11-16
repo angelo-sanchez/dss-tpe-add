@@ -1,7 +1,5 @@
 # Desplegabilidad - Escenario 01 - Migración de un componente a microservicio
 
-El equipo de DevOps debe desplegar un nuevo microservicio, anteriormente parte del monolito, en los entornos de pruebas y producción y sin afectar al sistema en funcionamiento. En caso de fallo, el despliegue debe permitir un rollback inmediato, sin interrupción de los servicios. Al menos el 90% de los despliegues deben ser exitosos en el primer intento, sin impacto en la disponibilidad del sistema. En caso de rollback, el estado anterior debe restaurarse en un máximo de 10 minutos.
-
 **Fuente:** El equipo de DevOps.
 
 **Estimulo:** Se requiere desplegar un nuevo microservicio.

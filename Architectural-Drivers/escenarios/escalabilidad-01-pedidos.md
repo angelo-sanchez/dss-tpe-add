@@ -1,7 +1,5 @@
 # Escalabilidad - Escenario 01 - Escalado de componente de Pedidos
 
-El componente de Pedidos es fundamental en el sistema, y el numero de pedidos por hora son un factor importante a considerar para la correcta escalabilidad del sistema
-
 **Estímulo:** El sistema experimenta un incremento del 400% en la cantidad de pedidos por hora debido a una promoción especial.
 
 **Fuente:** Usuarios legítimos (clientes) realizando pedidos de manera masiva durante la promoción.

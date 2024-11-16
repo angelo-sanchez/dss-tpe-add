@@ -1,5 +1,4 @@
 # Modificabilidad - Escenario 01 - Optimizacion de Algoritmos de rutas.
-La empresa desea mejorar la eficiencia del reparto mediante la implementación de un nuevo algoritmo de optimización de rutas. Este algoritmo considera factores adicionales, como el tráfico en tiempo real y las condiciones climáticas, con el objetivo de reducir los tiempos de entrega y mejorar la satisfacción del cliente.
 
 **Estimulo:** La incorporación del nuevo algoritmo de optimización requiere que el microservicio de Reparto y rutas sea actualizado para utilizar este algoritmo de manera eficiente.
 

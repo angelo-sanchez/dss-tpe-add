@@ -1,7 +1,5 @@
 # Performance - Escenario 01 - Tiempos de respuesta degradados en alta concurrencia
 
-Durante una campaña de marketing, el volumen de pedidos se incrementa considerablemente, por lo que el microservicio de pedidos escalar horizontalmente, manteniendo una latencia máxima de 5 segundos durante el pico de demanda. El tráfico debe balancearse para lograr que el periodo de degradación del servicio sea menor de 2 minutos.
-
 **Fuente:** Usuarios del sistema.
 
 **Estimulo:** El volumen de pedidos incrementa considerablemente.

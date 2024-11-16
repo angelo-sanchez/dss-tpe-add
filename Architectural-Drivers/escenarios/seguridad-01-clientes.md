@@ -1,7 +1,5 @@
 # Seguridad - Escenario 01 - Componente de Clientes (Proteccion de datos personales)
 
-El sistema debe garantizar la seguridad de los datos personales de los clientes, que incluyen información sensible como nombres, direcciones y detalles de pago.
-
 **Estimulo**: Un atacante intenta acceder a los datos personales de los clientes mediante un ataque.
 
 **Fuente**: Actor malintencionado externo (atacante).

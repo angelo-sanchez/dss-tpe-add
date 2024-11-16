@@ -1,7 +1,5 @@
 # Desplegabilidad - Escenario 01 - Sensor secundario en los camiones de reparto
 
-El sensor principal de GPS deja de emitir datos de ubicación, por lo que el sistema cambia automáticamente al sensor secundario, que tiene menor precisión, para poder mantener el seguimiento de los camiones en reparto. Durante la falla, el sistema debe registrar en tiempo real todos los errores detectados en los sensores y generar un reporte de fallas detallado. El sistema tiene un tiempo máximo de 5 minutos para intentar reiniciar el sensor primario y restablecer la precisión del seguimiento.
-
 **Fuente:** Sensor principal de GPS.
 
 **Estímulo:** Deja de emitir datos.
