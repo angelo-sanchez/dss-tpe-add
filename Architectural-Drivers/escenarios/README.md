@@ -8,4 +8,4 @@
 - [QA-06 - Modificabilidad -  Componente de rutas](./modificabilidad-01-%20Componente%20de%20rutas.md)
 - [QA-07 - Seguridad - Clientes](./seguridad-01-clientes.md)
 - [QA-08 - Disponibilidad - Reparto](./disponibilidad-01-reparto.md)
-- [QA-09 - Confiabilidad - Incidencias](./disponibilidad-01-reparto.md)
+- [QA-09 - Confiabilidad - Incidencias](./confiabilidad-01-incidencias.md)
