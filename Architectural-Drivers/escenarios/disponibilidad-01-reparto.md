@@ -1,4 +1,4 @@
-# Desplegabilidad - Escenario 01 - Sensor secundario en los camiones de reparto
+# Disponibilidad - Escenario 01 - Sensor secundario en los camiones de reparto
 
 **Fuente:** Sensor principal de GPS.
 
