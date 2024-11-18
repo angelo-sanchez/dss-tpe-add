@@ -45,7 +45,7 @@ El dominio de rutas y reparto, esta compuesto por el microservicios de reparto (
 
 ### Dominio de pagos
 
-El Dominio de pagos esta conformado por el microservicio de pagos, un gateway proxy, y la pasarela externa. El microservicio de pagos es el encargado de gestionar y operar sobre los mismos, hablando con el gateway proxy, el cual es el encargado de establecer la comunicacion con el sistema externo, asegurando que cualquier cambio en la API externa no afecte directamente al microservicio interno. Internamente implementa el patron Adapter, para desacoplar de la API de MP, facilitando cambios en un futuro.
+El Dominio de pagos esta conformado por el microservicio de pagos, un gateway proxy, y la pasarela externa. El microservicio de pagos es el encargado de gestionar y operar sobre los mismos, conectandose con el gateway proxy, el cual es el encargado de establecer la comunicacion con el sistema externo, asegurando que cualquier cambio en la API externa no afecte directamente al microservicio interno. Internamente implementa el patron Adapter, para desacoplar de la API de MP, facilitando cambios en un futuro.
 
 [ADR-004 Integracion de pagos](/Architectural-Decision-Records/ADR-004.md)
 
