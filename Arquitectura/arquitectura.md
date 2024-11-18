@@ -17,7 +17,13 @@ Esta arquitectura está orientada a facilitar la modularidad, el monitoreo y la 
 
 [Vista del Sistema de Pedidos](/Architectural-Decision-Records/imagenes/ADR-002-ddd-microservicio-pedidos.md)
 
-### Clientes
+### Dominio de Clientes
+
+El Dominio de Clientes está compuesto por el microservicio de clientes, que internamente tendrá una arquitectura de capas, y es responsable de auditar y autorizar las solicitudes de datos de clientes. Otro componente es la DB-per-service que contendrá los datos de los clientes. Y finalmente, ElasticSearch como base de datos documental para almacenar las auditorías y facilitar su posterior consulta.
+
+[ADR-005 Sistema de Clientes con IDP externo y Arquitectura de tres capas internas](/Architectural-Decision-Records/ADR-005.md)
+
+[Vista del Sistema de Clientes](/Architectural-Decision-Records/imagenes/ADR-005-microservicio-clientes.md)
 
 ### Rutas
 
