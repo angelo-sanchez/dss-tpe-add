@@ -32,9 +32,25 @@ El Dominio de Clientes está compuesto por el microservicio de clientes, que int
 
 [Vista del Sistema de Clientes](/Architectural-Decision-Records/imagenes/ADR-005-microservicio-clientes.md)
 
-### Rutas
+### Dominio de Rutas y reparto
 
-### Pagos
+El dominio de rutas y reparto, esta compuesto por el microservicios de reparto (no diseñado en detalle), y el microservicio de rutas, responsable de calcular las rutas, utilizando distintos algoritmos, y dando soporte a nuevos algoritmos o criterios sobre cual utilizar. Ademas, cuenta con una cache implementada en redis, que permite dar una respuesta mas rapida ante la consulta de una ruta recientemente calculada.
+
+[ADR-003 Calculo de rutas dinamico](/Architectural-Decision-Records/ADR-003.md)
+
+[Diagrama de clases de la implementacion interna del microservicio de rutas](/Architectural-Decision-Records/imagenes/ADR-003-diagrama-de-clases.md)
+
+[Diagrama de secuencia de la implementacion interna del microservicio de rutas](/Architectural-Decision-Records/imagenes/ADR-003-diagrama-de-secuencia.md)
+
+
+### Dominio de pagos
+
+El Dominio de pagos esta conformado por el microservicio de pagos, un gateway proxy, y la pasarela externa. El microservicio de pagos es el encargado de gestionar y operar sobre los mismos, hablando con el gateway proxy, el cual es el encargado de establecer la comunicacion con el sistema externo, asegurando que cualquier cambio en la API externa no afecte directamente al microservicio interno. Internamente implementa el patron Adapter, para desacoplar de la API de MP, facilitando cambios en un futuro.
+
+[ADR-004 Integracion de pagos](/Architectural-Decision-Records/ADR-004.md)
+
+[Vista del dominio de Pagos](/Architectural-Decision-Records/imagenes/ADR-004-vista-estatica-pagos.md)
+
 
 
 ## Backlog (consultar)
