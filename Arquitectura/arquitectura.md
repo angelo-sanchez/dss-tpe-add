@@ -3,6 +3,7 @@ Esta vista muestra cómo interactúan los diferentes microservicios
 
 ![Vista Global de la Arquitectura](./imagenes/arquitectura-detalle.jpg)
 
+Esta vista fue generada con Miro y se puede visualizar con mejor detalle en [este enlace](https://miro.com/app/board/uXjVLD5rjlQ=/?share_link_id=523970499998)
 
 ## Elementos
 
