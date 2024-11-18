@@ -6,6 +6,12 @@ Esta vista muestra cómo interactúan los diferentes microservicios
 
 ## Elementos
 
+### Sistemas Externos
+
+- MercadoPago es el proveedor de pagos, el cual se intregrará mediante el consumo de una API.
+
+- Auth0 es el proveedor de identidad federada, que se encarga de las credenciales de los usuarios, puede integrar inicio de sesión con otros proveedores como Google o Facebook.
+
 ### Dominio de Pedidos
 
 El Dominio de Pedidos está compuesto por una máquina de estados, representada por varios microservicios que van a estar conectados de manera que en cada microservicio se procese el pedido según el estado que representa y al finalizar el procesamiento, va a pasar el pedido al siguiente microservicio, siguiendo la cadena de estados.
