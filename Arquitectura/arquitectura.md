@@ -15,6 +15,7 @@ Esta arquitectura está orientada a facilitar la modularidad, el monitoreo y la 
 
 [ADR-002: Domain-Driven Design con Máquina de Estados para el Sistema de Pedidos](/Architectural-Decision-Records/ADR-002.md)
 
+[Vista del Sistema de Pedidos](/Architectural-Decision-Records/imagenes/ADR-002-ddd-microservicio-pedidos.md)
 
 ### Clientes
 
