@@ -1,27 +1,25 @@
-# Iteración 3 Cálculo de rutas dinámico
+# Iteración 3: Cálculo de rutas dinámico
 
-Una vez resuelto el Sistema de pedidos, procedimos a evaluar los inputs y prioridades, para establecer los objetivos de la iteración, decidiendo así, refinar el microservicio de rutas de la aplicación, catalogado como parte crítica del sistema, y siendo este además, alcanzado por múltiples Atributos de calidad.
+Una vez resuelto el Sistema de pedidos, procedimos a evaluar las prioridades para establecer los objetivos de la iteración, decidimos refinar el microservicio de rutas de la aplicación, ya que está catalogado como parte crítica y debe satisfacer varios Atributos de calidad.
 
-Una de las características más importantes del componente, era la capacidad de poder calcular la ruta con distintos algoritmos basados en un criterio. Si bien el enunciado plantea dos algoritmos, y un criterio, nosotros entendimos qué, esto está sujeto a potenciales cambios, por lo qué optamos por evaluar conceptos qué nos permitieran desacoplar la implementación interna del microservicio, de los algoritmos o criterios seleccionados. 
+Una de las características más importantes del componente, es la capacidad de poder calcular la ruta con distintos algoritmos basados en diferentes criterios. Aunque el enunciado plantea dos algoritmos y un criterio, entendimos que este diseño debe ser flexible frente a cambios futuros. Por lo tanto, evaluamos conceptos que permitieran desacoplar la implementación interna del microservicio de los algoritmos y criterios específicos. 
 
-Los conceptos más relevantes qué encontramos, fueron “Strategy Pattern”, “Template method Pattern”, “Caching”, “Dependency injection”. Para dar con ellos, hicimos uso de herramientas generativas como ArchMind, y CHAT GPT, ade
+Los conceptos más relevantes que encontramos, fueron “Strategy Pattern”, “Template method Pattern”, “Caching”, “Dependency injection”. Para dar con ellos, hicimos uso de herramientas generativas como ArchMind, y ChatGPT
 
-Finalmente, terminamos decidiendo qué, las mejores opciones son, Strategy, Template, y Caching.
+Tras analizar las alternativas, seleccionamos Strategy, Template Method y Caching como las opciones más adecuadas para nuestro problema.
 
 ## Strategy
-La idea sería qué, el patrón strategy nos permitiera desacoplar al manejador de las request, del algoritmo con el cual tener qué hacerlo, para así poder seleccionar entre los algoritmos existentes, y potencialmente nuevos algoritmos, de manera natural.
+Permite desacoplar el manejador de las requests del algoritmo utilizado para el cálculo de rutas. Esto facilita la selección entre algoritmos existentes y la incorporación de nuevos algoritmos de manera natural y modular.
 
-## Template method
-El objetivo es qué, los algoritmos existentes, tengan qué implementar este patrón, con el objetivo de definir pasos a completar, facilitando la incorporación de nuevos algoritmos
+## Template Method
+Define los pasos comunes que deben seguir los algoritmos de cálculo, asegurando consistencia y reduciendo la complejidad al incorporar nuevos algoritmos.
 
 ## Caching
-Decidimos incorporar una caché de corta duración, qué permitiera guardar cálculos para no tener qué volver a calcularlos en periodos de tiempo cortos, para no sacrificar la fidelidad de los mismos.
+Decidimos incorporar una caché de corta duración, que permitiera guardar cálculos para no tener que volver a calcularlos en periodos de tiempo cortos sin sacrificar la fidelidad y precisión de los mismos.
 
-Una vez decididos los patrones y tácticas a utilizar, procedimos a instanciarlo a nuestro problema, generando así, un diagrama de clases, mostrando como estas implementan los patrones, y un diagrama de secuencia, mostrando la interacción de las mismas en una secuencia normal.
+Una vez decididos los patrones y tácticas a utilizar, instanciamos estas soluciones a nuestro problema. Por esto desarrollamos un diagrama de clases que muestre cómo las clases implementan los patrones y un diagrama de secuencia que refleja la interacción en una flujo típico.
 
 ## Resultados de la Iteración 3
-[ADR-003](./Architectural-Decision-Records/ADR-003.md)
-
-[ADR-003 Diagrama de clases](./Architectural-Decision-Records/imagenes/ADR-003-diagrama-de-clases.md)
-
-[ADR-003 Diagrama de secuencia](./Architectural-Decision-Records/imagenes/ADR-003-diagrama-de-secuencia.md)
+- [ADR-003](./Architectural-Decision-Records/ADR-003.md)
+- [ADR-003 Diagrama de clases](./Architectural-Decision-Records/imagenes/ADR-003-diagrama-de-clases.md)
+- [ADR-003 Diagrama de secuencia](./Architectural-Decision-Records/imagenes/ADR-003-diagrama-de-secuencia.md)
