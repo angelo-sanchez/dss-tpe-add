@@ -53,4 +53,10 @@ El Dominio de pagos esta conformado por el microservicio de pagos, un gateway pr
 
 
 
-## Backlog (consultar)
+## Backlog
+
+Los componentes que no llegamos a refinar, son:
+
+  - Microservicio de reparto
+  - Microservicio de estadisticas
+  - Microservicio de incidencias 
