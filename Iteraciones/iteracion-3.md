@@ -20,6 +20,6 @@ Decidimos incorporar una caché de corta duración, que permitiera guardar cálc
 Una vez decididos los patrones y tácticas a utilizar, instanciamos estas soluciones a nuestro problema. Por esto desarrollamos un diagrama de clases que muestre cómo las clases implementan los patrones y un diagrama de secuencia que refleja la interacción en una flujo típico.
 
 ## Resultados de la Iteración 3
-- [ADR-003](./Architectural-Decision-Records/ADR-003.md)
-- [ADR-003 Diagrama de clases](./Architectural-Decision-Records/imagenes/ADR-003-diagrama-de-clases.md)
-- [ADR-003 Diagrama de secuencia](./Architectural-Decision-Records/imagenes/ADR-003-diagrama-de-secuencia.md)
+- [ADR-003](/Architectural-Decision-Records/ADR-003.md)
+- [ADR-003 Diagrama de clases](/Architectural-Decision-Records/imagenes/ADR-003-diagrama-de-clases.md)
+- [ADR-003 Diagrama de secuencia](/Architectural-Decision-Records/imagenes/ADR-003-diagrama-de-secuencia.md)

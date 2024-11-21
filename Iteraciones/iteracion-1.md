@@ -8,6 +8,6 @@ Ya habiendo evalueado los patrones de diseño relevantes, los instanciamos en nu
 
 # Resultados de la Iteración 1
 - [ADR 001: Arquitectura basada en microservicios, primera aproximacion](/Architectural-Decision-Records/ADR-001.md)
-- [ADR-001 Vista de microservicios](./Architectural-Decision-Records/imagenes/ADR-001-%20arquitectura-general-primera-aproximacion.md)
+- [ADR-001 Vista de microservicios](/Architectural-Decision-Records/imagenes/ADR-001-%20arquitectura-general-primera-aproximacion.md)
 
 Habiendo registrado las decisiones, entendimos que los objetivos de la iteración se cumplieron: logramos obtener una primera aproximación de la arquitectura orientada a microservicios.
